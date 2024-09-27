@@ -1,4 +1,2 @@
 # Keyno
-Project in development
-fuckkkk#fuck
-#fuck
+Password manager in development
