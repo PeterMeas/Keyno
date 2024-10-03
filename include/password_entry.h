@@ -8,17 +8,20 @@
 
 class Password_Entry{
     public:
-    Password_Entry(const std::string title, const std::string website, const std::string username, const std::string password)
-    : title(title), website(website), username(username), password(password) {}
+    Password_Entry(const User& user, const std::string title, const std::string website, const std::string username, const std::string password)
+    : user(user), title(title), website(website), username(username), password(password) {}
+    void setPassword(const User& user, const std::string& newPassword); //input
+    bool isUser(const User& user) const;
     std::string getTitle() const;
     std::string getWebsite() const;
     std::string getUsername() const;
     std::string getPassword() const;
 
-    std::string getNotes() const;
-    std::string setNotes(const std::string& notes);
+    std::vector<std::string> getNotes() const;
+    void setNotes(const std::string& notes);
 
     private:
+    User user;
     std::string website;
     std::string username;
     std::string password;

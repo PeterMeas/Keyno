@@ -2,24 +2,14 @@
 #include "/Users/test/Desktop/User/include/utility.h"
 #include <iostream>
 
-void Password_Manager::enterPassword(User& username)
-{
-   std::string newPass;
-   std::cout<< "Enter Password" << std::endl;
-   disableEcho();
-   getline(std::cin, newPass);
-   stored_passwords.push_back(newPass);
-   enableEcho();
-   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-   std::cin.clear();
 
-}
 
-std::string Password_Manager::getPass() const{
-       return stored_passwords.front();
-   }
-
-void Password_Manager::addPassword(const std::string& website, const std::string& username, const std::string& password){
+void Password_Manager::addPassword(const std::string& title, const std::string& website, const std::string& username, const std::string& password){
+    Password_Entry newEntry(title, website, username, password);
     //encrypt password using OpenSSL ;library
-
+    stored_passwords.push_back(newEntry); //store full entry
 }
+
+Password_Entry Password_Manager::getEntry(const int index){
+       return stored_passwords.at(index); //return entire password entry object
+   }

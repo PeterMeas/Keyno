@@ -11,7 +11,8 @@
 class Password_Manager{
 
     public:
-    //addEntry
+    void addPassword(const std::string& title, const std::string& website, const std::string& username, const std::string& password);
+    Password_Entry getEntry(const int index);
     //viewEntry();
     //deleteEntry();
     //updateEntry();
@@ -20,7 +21,7 @@ class Password_Manager{
 
 
     private:
-    std::vector<Password_Entry> entries;
+    std::vector<Password_Entry> stored_passwords;
 };
 
 #endif
