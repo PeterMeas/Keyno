@@ -1,4 +1,4 @@
-#include "/Users/test/Desktop/User/include/utility.h"
+#include "../include/utility.h"
 #include <termios.h>
 #include <unistd.h>
 

@@ -1,0 +1,3 @@
+/Users/test/Desktop/User/build/CMakeFiles/Keyno.dir
+/Users/test/Desktop/User/build/CMakeFiles/edit_cache.dir
+/Users/test/Desktop/User/build/CMakeFiles/rebuild_cache.dir

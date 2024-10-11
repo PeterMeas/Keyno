@@ -1,4 +1,4 @@
-#include "/Users/test/Desktop/User/include/user.h"
+#include "../include/user.h"
 
 void User::enterUsername(){
 std::cout << "Enter Username" << std::endl;

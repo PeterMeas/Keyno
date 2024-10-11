@@ -1,4 +1,4 @@
-#include "/Users/test/Desktop/User/include/auth.h"
+#include "../include/auth.h"
 
 void Auth::setAuthToken()
 {

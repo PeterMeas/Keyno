@@ -11,7 +11,8 @@
 class Password_Manager{
 
     public:
-    void addPassword(const std::string& title, const std::string& website, const std::string& username, const std::string& password);
+    //Password_Manager(): 
+    void addPassword(const User& user, const std::string& title, const std::string& website, const std::string& username, const std::string& password);
     Password_Entry getEntry(const int index);
     //viewEntry();
     //deleteEntry();

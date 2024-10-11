@@ -1,8 +1,8 @@
-#include "/Users/test/Desktop/User/include/auth.h"
-#include "/Users/test/Desktop/User/include/user.h"
+#include "../include/auth.h"
+#include "../include/user.h"
 //#include "/Users/test/Desktop/User/include/username.h"
-#include "/Users/test/Desktop/User/include/password_manager.h"
-#include "/Users/test/Desktop/User/include/utility.h"
+#include "../include/password_manager.h"
+#include "../include/utility.h"
 #include "include/password_entry.h"
 #include <fstream>
 #include <ios>

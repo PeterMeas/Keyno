@@ -1,5 +1,5 @@
-#include "/Users/test/Desktop/User/include/password_entry.h"
-#include "/Users/test/Desktop/User/include/utility.h"
+#include "../include/password_entry.h"
+#include "../include/utility.h"
 #include <cstdio>
 #include <iostream>
 #include <vector>
