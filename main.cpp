@@ -1,6 +1,13 @@
 #include "../include/auth.h"
 #include "../include/user.h"
 //#include "/Users/test/Desktop/User/include/username.h"
+
+
+#include <openssl/evp.h>
+#include <openssl/aes.h>
+#include <openssl/ssl.h>
+
+
 #include "../include/password_manager.h"
 #include "../include/utility.h"
 #include "include/password_entry.h"
@@ -9,10 +16,13 @@
 #include <iostream>
 #include <limits>
 #include <string>
-
+void test_openssl(){
+    std::cout << "OpenSSL version: " << OpenSSL_version(OPENSSL_VERSION) << std::endl;
+}
 int main(int argc, char* argv[])
 {
 
+    test_openssl();
    /*  std::string storedUser, storedPass, storedAuthToken;
     if (auth.loadAuthDetails(storedUser, storedPass, storedAuthToken)) {
         std::cout << "Credentials found, using stored authentication details." << std::endl;

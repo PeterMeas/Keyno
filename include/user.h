@@ -12,6 +12,7 @@ class User{
 
     public:
     User(const std::string& username, const std::string& password);
+    bool isUserValid(const std::string& username, const std::string& password);
     void enterUsername();
     std::string getUser() const;
     std::string getPass() const;

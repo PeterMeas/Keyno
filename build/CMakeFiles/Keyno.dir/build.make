@@ -172,6 +172,8 @@ Keyno: CMakeFiles/Keyno.dir/src/user.cpp.o
 Keyno: CMakeFiles/Keyno.dir/src/utility.cpp.o
 Keyno: CMakeFiles/Keyno.dir/main.cpp.o
 Keyno: CMakeFiles/Keyno.dir/build.make
+Keyno: /opt/homebrew/lib/libssl.dylib
+Keyno: /opt/homebrew/lib/libcrypto.dylib
 Keyno: CMakeFiles/Keyno.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/test/Desktop/User/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable Keyno"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Keyno.dir/link.txt --verbose=$(VERBOSE)
