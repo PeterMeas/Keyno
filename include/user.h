@@ -14,10 +14,12 @@ class User{
     User(const std::string& username, const std::string& password);
     bool isUserValid(const std::string& username, const std::string& password);
     void enterUsername();
-    std::string getUser() const;
-    std::string getPass() const;
-    //createUser();
-    //deleteUser();
+    std::string getUser() const { return username; } 
+    std::string getPass() const { return password; }
+    
+    void createUser();
+    void deleteUser();
+
     //listUsers();
 
 

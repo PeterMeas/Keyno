@@ -16,8 +16,13 @@
 #include <iostream>
 #include <limits>
 #include <string>
-void test_openssl(){
+
+inline void test_openssl(){
+
     std::cout << "OpenSSL version: " << OpenSSL_version(OPENSSL_VERSION) << std::endl;
+    std::cout << "OpenSSL version number: " << OpenSSL_version_num() << std::endl;
+    
+    
 }
 int main(int argc, char* argv[])
 {

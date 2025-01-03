@@ -25,10 +25,3 @@ User::User (const std::string& username, const std::string& password){
     }
 }
 
-std::string User::getUser() const{
-    return username;
-}
-
-std::string User::getPass() const{
-    return password;
-}
